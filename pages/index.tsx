@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-
+import { Auth } from "@aws-amplify/auth";
 import styles from "../styles/Home.module.css";
 
-const Home: NextPage = () => {
+const Home: NextPage<{ user: any }> = (props) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -51,6 +51,9 @@ const Home: NextPage = () => {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+          <button onClick={() => Auth.signOut()}>
+            Sign Out {props.user.getUsername()}
+          </button>
         </div>
       </main>
 
