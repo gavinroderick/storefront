@@ -10,6 +10,14 @@
       "StackName": "amplify-storefront-main-141854",
       "StackId": "arn:aws:cloudformation:eu-west-1:949270615733:stack/amplify-storefront-main-141854/c9670c50-585d-11ed-8607-0a620b3f2e41",
       "AmplifyAppId": "d1vd95goibqdqr"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1vd95goibqdqr",
+          "type": "cicd"
+        }
+      }
     }
   }
 }
